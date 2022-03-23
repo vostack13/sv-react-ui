@@ -1,0 +1,12 @@
+.SV-Checkbox {
+  color: var(--color);
+}
+
+.SV-Checkbox label,
+.SV-Checkbox input {
+  cursor: pointer;
+}
+
+.SV-Checkbox-label {
+  padding-left: 4px;
+}
