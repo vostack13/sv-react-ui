@@ -1,7 +1,9 @@
 {
   "name": "sv-react-ui",
-  "version": "0.1.6",
-  "main": "lib/index",
+  "version": "0.1.9",
+  "main": "lib/cjs/index",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
   "private": false,
   "files": [
     "lib",
@@ -33,15 +35,12 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "rimraf lib",
-    "compile-components-css": "copyfiles -u 1 src/components/**/*.css lib/",
-    "compile-components-ts": "tsc src/components/index.ts --jsx react-jsx --declaration --outDir lib/components",
-    "compile-components": "npm run compile-components-ts && npm run compile-components-css",
-    "compile-hooks": "tsc src/hooks/index.ts --jsx react-jsx --declaration --outDir lib/hooks",
-    "compile-styles": "copyfiles -u 1 src/styles/**/*.css lib/",
-    "compile-t": "npm run clean && npm run compile-components && npm run compile-hooks && npm run compile-styles",
+    "compile-cjs": "tsc --project ./tsconfig-lib.json",
+    "compile-ecm": "tsc src/ui-lib/index.ts --jsx react-jsx --outDir --declaration lib/ecm",
     "compile-ts": "tsc src/ui-lib/index.ts --jsx react-jsx --declaration --outDir lib",
-    "compile-css": "copyfiles -u 2 src/ui-lib/**/*.css lib/",
-    "compile": "npm run clean && npm run compile-ts && npm run compile-css"
+    "compile-css-cjs": "copyfiles -u 2 src/ui-lib/**/*.css lib",
+    "compile-css-ecm": "copyfiles -u 2 src/ui-lib/**/*.css lib/ecm",
+    "compile": "npm run clean && npm run compile-cjs && npm run compile-css-cjs"
   },
   "eslintConfig": {
     "extends": [
@@ -70,5 +69,9 @@
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
     "typescript": "^4.6.2"
-  }
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2"
+ }
 }

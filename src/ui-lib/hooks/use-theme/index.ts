@@ -37,11 +37,9 @@ const nextTheme = (theme: Theme): Theme => {
   return newTheme;
 }
 
-export const useTheme = (): UseThemeValues => {
-  const [theme, setTheme] = useState<Theme>(getTheme);
+const useTheme = (): UseThemeValues => {
+  const [theme, setTheme] = useState<Theme>(getTheme());
 
-  
-  
   const toggle = useCallback(() => {
     
     console.log('theme', theme);
@@ -56,3 +54,5 @@ export const useTheme = (): UseThemeValues => {
 
   return { theme, isDark, toggle }
 }
+
+export default useTheme;

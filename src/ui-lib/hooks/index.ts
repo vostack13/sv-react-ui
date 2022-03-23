@@ -1,5 +1,1 @@
-import { useTheme } from './use-theme'
-
-export {
-  useTheme
-}
+export { default as useTheme } from './use-theme'

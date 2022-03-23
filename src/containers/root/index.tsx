@@ -1,6 +1,6 @@
 import { FC } from "react";
-import Checkbox from "../../ui-lib/components/checkbox";
-import { useTheme } from "../../ui-lib/hooks/use-theme";
+import { Checkbox } from "../../ui-lib";
+import { useTheme } from "../../ui-lib";
 
 export const Root: FC = () => {
   const { isDark, toggle } = useTheme();
