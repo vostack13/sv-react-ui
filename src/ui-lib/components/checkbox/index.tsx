@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import './styles.css'
 
 interface InputProps extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, React.AriaAttributes  {}
@@ -16,4 +16,4 @@ const Checkbox: FC<Props> = ({ label, ...props }) => (
 )
 
 
-export default Checkbox;
+export { Checkbox };

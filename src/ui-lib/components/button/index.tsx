@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import cn from "classnames";
 import './styles.css'
 
@@ -7,4 +7,4 @@ interface Props extends ButtonProps {}
 
 const Button: FC<Props> = ({ children, ...props }) => <button className={cn('SV-Button')} {...props}>{children}</button>
 
-export default Button;
+export { Button };

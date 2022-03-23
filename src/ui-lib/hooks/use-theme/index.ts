@@ -55,4 +55,4 @@ const useTheme = (): UseThemeValues => {
   return { theme, isDark, toggle }
 }
 
-export default useTheme;
+export { useTheme };

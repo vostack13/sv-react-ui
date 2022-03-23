@@ -1,9 +1,8 @@
 {
-  "name": "sv-react-ui",
-  "version": "0.1.9",
-  "main": "lib/cjs/index",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/esm/index.d.ts",
+"name": "sv-react-ui",
+"version": "0.1.12",
+"main": "lib/index",
+"module": "lib/index",
   "private": false,
   "files": [
     "lib",

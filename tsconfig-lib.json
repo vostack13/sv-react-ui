@@ -4,7 +4,7 @@
     "declaration": true,
     "outDir": "lib",
     "allowJs": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -14,14 +14,9 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "noEmit": false,
+    "lib": ["dom", "es2017"],
     "rootDir": "./src/ui-lib",
   },
-  "include": [
-    "src/ui-lib"
-  ]
+  "include": ["src/ui-lib"],
 }
