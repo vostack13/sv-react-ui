@@ -1,0 +1,79 @@
+.SV-Icon-color-gray {
+  --fill: var(--gray);
+}
+
+.SV-Icon-color-gray-1 {
+  --fill: var(--gray-1);
+}
+
+.SV-Icon-color-gray-2 {
+  --fill: var(--gray-2);
+}
+
+.SV-Icon-color-gray-3 {
+  --fill: var(--gray-3);
+}
+
+.SV-Icon-color-gray-4 {
+  --fill: var(--gray-4);
+}
+
+.SV-Icon-color-gray-5 {
+  --fill: var(--gray-5);
+}
+
+.SV-Icon-color-gray-6 {
+  --fill: var(--gray-6);
+}
+
+.SV-Icon-color-pink {
+  --fill: var(--pink);
+}
+
+.SV-Icon-color-red {
+  --fill: var(--red);
+}
+
+.SV-Icon-color-orange {
+  --fill: var(--orange);
+}
+
+.SV-Icon-color-yellow {
+  --fill: var(--yellow);
+}
+
+.SV-Icon-color-green {
+  --fill: var(--green);
+}
+
+.SV-Icon-color-mint {
+  --fill: var(--mint);
+}
+
+.SV-Icon-color-teal {
+  --fill: var(--teal);
+}
+
+.SV-Icon-color-cyan {
+  --fill: var(--cyan);
+}
+
+.SV-Icon-color-blue {
+  --fill: var(--blue);
+}
+
+.SV-Icon-color-indigo {
+  --fill: var(--indigo);
+}
+
+.SV-Icon-color-purple {
+  --fill: var(--purple);
+}
+
+.SV-Icon-color-brown {
+  --fill: var(--brown);
+}
+
+.SV-Icon svg {
+  fill: var(--fill, --base-color);
+}

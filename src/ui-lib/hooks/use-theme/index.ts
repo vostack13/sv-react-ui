@@ -3,11 +3,13 @@ import { THEMES, THEME_DARK, THEME_LIGHT, THEME_LOCALSTORAGE_NAME } from "./cont
 import { Theme, UseThemeValues } from "./types";
 
 const setThemeToLocalStorage = (theme: Theme ) => {
+  console.log('set', theme);
+  
   window.localStorage.setItem(THEME_LOCALSTORAGE_NAME, theme)
 }
 
 const getThemeByLocalStorage = (): any => {
-  window.localStorage.getItem(THEME_LOCALSTORAGE_NAME)
+  return window.localStorage.getItem(THEME_LOCALSTORAGE_NAME)
 }
 
 const getTheme = (): Theme => {
@@ -38,11 +40,9 @@ const nextTheme = (theme: Theme): Theme => {
 }
 
 const useTheme = (): UseThemeValues => {
-  const [theme, setTheme] = useState<Theme>(getTheme());
+  const [theme, setTheme] = useState<Theme>(getTheme);
 
   const toggle = useCallback(() => {
-    
-    console.log('theme', theme);
     setTheme(nextTheme(theme))
   }, [theme]);
 

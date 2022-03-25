@@ -1,0 +1,13 @@
+.SV-Text {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--color);
+  text-decoration: var(--text-decoration);
+  text-transform: var(--text-transform);
+  transition-duration: var(--transition-duration);
+  transition-property: var(--transition-property);
+  cursor: var(--cursor);
+}

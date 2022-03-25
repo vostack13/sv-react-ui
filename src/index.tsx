@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Root } from './containers/root';
 import reportWebVitals from './reportWebVitals';
+import './ui-lib/styles/themes/light.css'
+import './ui-lib/styles/themes/dark.css'
 import './ui-lib/styles/common.css'
 import './ui-lib/styles/layout.css'
 

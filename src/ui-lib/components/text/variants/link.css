@@ -1,0 +1,33 @@
+:root[data-theme="sv-theme-dark"] .SV-Text--link {
+  --color: var(--blue-dark);
+}
+
+:root[data-theme="sv-theme-dark"] .SV-Text-hover--link:hover {
+  --color: var(--cyan-dark);
+}
+
+:root[data-theme="sv-theme-light"] .SV-Text--link {
+  --color: var(--blue-light);
+}
+
+:root[data-theme="sv-theme-light"] .SV-Text-hover--link:hover {
+  --color: var(--cyan-light);
+}
+
+.SV-Text--link {
+  --font-family: var(--font-family-common);
+  --font-size: 14px;
+  --font-weight: 400;
+  --line-height: 16px;
+  --letter-spacing: initial;
+  --text-decoration: none;
+  --text-transform: none;
+  --text-decoration: none;
+}
+
+.SV-Text-hover--link {
+  --cursor: pointer;
+  --transition-duration: .3s;
+  --transition-property: color;
+  --text-decoration: underline;
+}

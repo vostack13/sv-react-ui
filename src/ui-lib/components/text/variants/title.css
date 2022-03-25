@@ -1,0 +1,32 @@
+:root[data-theme="sv-theme-dark"] .SV-Text--title {
+  --color: var(--gray-6);
+}
+
+:root[data-theme="sv-theme-dark"] .SV-Text-hover--title:hover {
+  --color: var(--gray);
+}
+
+:root[data-theme="sv-theme-light"] .SV-Text--title {
+  --color: var(--gray-6);
+}
+
+:root[data-theme="sv-theme-light"] .SV-Text-hover--title:hover {
+  --color: var(--gray);
+}
+
+.SV-Text--title {
+  --font-family: var(--font-family-common);
+  --font-size: 24px;
+  --font-weight: 700;
+  --line-height: 24px;
+  --letter-spacing: initial;
+  --text-decoration: none;
+  --text-transform: none;
+  --text-decoration: none;
+}
+
+.SV-Text-hover--title {
+  --cursor: pointer;
+  --transition-duration: .3s;
+  --transition-property: color;
+}

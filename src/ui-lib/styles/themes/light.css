@@ -1,0 +1,21 @@
+:root[data-theme="sv-theme-light"] {
+  --gray: #8E8E93;
+  --gray-2: #636366;
+  --gray-3: #48484A;
+  --gray-4: #3A3A3C;
+  --gray-5: #2C2C2E;
+  --gray-6: #1C1C1E;
+
+  --pink: #FF2D55;
+  --red: #FF3B30;
+  --orange: #FF9500;
+  --yellow: #FFCC00;
+  --green: #34C759;
+  --mint: #00C7BE;
+  --teal: #30B0C7;
+  --cyan: #32ADE6;
+  --blue: #007AFF;
+  --indigo: #5856D6;
+  --purple: #AF52DE;
+  --brown: #A2845E;
+}
