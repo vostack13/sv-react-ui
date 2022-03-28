@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ArrowDown, ArrowLeft, ArrowUp, Checkbox, Text } from "../../ui-lib";
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Checkbox, Text } from "../../ui-lib";
 import { useTheme } from "../../ui-lib";
 import { Box } from "../../ui-lib/components/box";
 import { GridEdit } from "../../ui-lib/icons/grid-edit";
@@ -23,6 +23,7 @@ export const Root: FC = () => {
           <ArrowUp />
           <ArrowDown />
           <ArrowLeft />
+          <ArrowRight />
           <GridEdit />
         </Box>
 
@@ -30,6 +31,7 @@ export const Root: FC = () => {
           <ArrowUp size={16} />
           <ArrowDown size={16} />
           <ArrowLeft size={16} />
+          <ArrowRight size={16} />
           <GridEdit size={16} />
         </Box>
 
