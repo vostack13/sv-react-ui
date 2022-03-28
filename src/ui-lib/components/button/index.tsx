@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import cn from "classnames";
+import cn from '../../utils/classnames';
 import './styles.css'
 
 interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, React.AriaAttributes  {}
