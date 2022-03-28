@@ -1,0 +1,41 @@
+.SV-Box-flex-row {
+  --flex-column: row;
+}
+
+.SV-Box-flex-column {
+  --flex-column: column;
+}
+
+.SV-Box-flex {
+  display: flex;
+  flex-direction: var(--flex-column);
+  flex-wrap: var(--flex-wrap);
+  gap: var(--gap);
+  padding-top: var(--pt, 0);
+  padding-bottom: var(--pb, 0);
+  padding-left: var(--pl, 0);
+  padding-right: var(--pr, 0);
+}
+
+.SV-Box {
+  background-color: var(--bg-color, transparent);
+  border-width: var(--border-width);
+  border-style: solid;
+  border-color: var(--border-color, transparent);
+  border-radius: var(--radius);
+  width: var(--width, 100%);
+  box-sizing: border-box;
+}
+
+.SV-Box-grid {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.SV-Box-grid > .SV-Box {
+  display: block;
+  padding-left: var(--grid-gap);
+  padding-right: var(--grid-gap);
+  flex: 0 0 calc(100% / var(--grid-coll, 1));
+  max-width: calc(100% / var(--grid-coll, 1));
+}

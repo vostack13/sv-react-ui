@@ -1,3 +1,5 @@
+import { Colors } from "../../types";
+
 type TextVariant = 'title' | 'body' | 'link';
 
 interface SpanProps extends React.DetailedHTMLProps<React.BaseHTMLAttributes<HTMLSpanElement>, HTMLSpanElement>, React.AriaAttributes  {}
@@ -5,4 +7,6 @@ interface SpanProps extends React.DetailedHTMLProps<React.BaseHTMLAttributes<HTM
 export interface TextProps extends SpanProps {
   variant?: TextVariant;
   hover?: boolean;
+  invert?: boolean;
+  color?: Colors
 }

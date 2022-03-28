@@ -74,6 +74,16 @@
   --fill: var(--brown);
 }
 
+.SV-Icon-size-16 {
+  --icon-size: 16px
+}
+
+.SV-Icon-size-24 {
+  --icon-size: 24px
+}
+
 .SV-Icon svg {
-  fill: var(--fill, --base-color);
+  fill: var(--fill, var(--base-color));
+  width: var(--icon-size);
+  height: var(--icon-size);
 }

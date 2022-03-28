@@ -1,17 +1,13 @@
-:root[data-theme="sv-theme-dark"] .SV-Text--body {
-  --color: var(--gray-5-light);
+.SV-Text-color--body {
+  --color: var(--gray-10);
 }
 
-:root[data-theme="sv-theme-dark"] .SV-Text-hover--body:hover {
-  --color: var(--gray-light);
+.SV-Text-color-invert--body {
+  --color: var(--gray-2);
 }
 
-:root[data-theme="sv-theme-light"] .SV-Text--body {
-  --color: var(--gray-5-dark);
-}
-
-:root[data-theme="sv-theme-light"] .SV-Text-hover--body:hover {
-  --color: var(--gray-dark);
+.SV-Text-hover-color--body:hover {
+  --color: var(--gray-6);
 }
 
 .SV-Text--body {
@@ -22,11 +18,13 @@
   --letter-spacing: initial;
   --text-decoration: none;
   --text-transform: none;
-  --text-decoration: none;
 }
 
 .SV-Text-hover--body {
   --cursor: pointer;
+}
+
+.SV-Text-hover--body:hover {
   --transition-duration: .3s;
   --transition-property: color;
 }

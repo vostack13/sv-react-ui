@@ -6,6 +6,7 @@ import './ui-lib/styles/themes/light.css'
 import './ui-lib/styles/themes/dark.css'
 import './ui-lib/styles/common.css'
 import './ui-lib/styles/layout.css'
+import './ui-lib/styles/space.css'
 
 ReactDOM.render(
   <React.StrictMode>

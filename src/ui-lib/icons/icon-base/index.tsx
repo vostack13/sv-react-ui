@@ -3,11 +3,11 @@ import './styles.css'
 import cn from 'classnames'
 import { IconProps } from "./types"
 
-const IconBase: FC<IconProps> = ({ children, color, hover, ...props }) => {
+const IconBase: FC<IconProps> = ({ children, color, size = 24, ...props }) => {
   return <div className={cn(
     "SV-Icon",
+    `SV-Icon-size-${size}`,
     color && `SV-Icon-color-${color}`,
-    // color && hover && `SV-Icon-color-hover-${color}`
   )} {...props}>
     {children}
   </div>

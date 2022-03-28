@@ -1,10 +1,18 @@
 :root[data-theme="sv-theme-dark"] {
-  --gray: #8E8E93;
-  --gray-2: #AEAEB2;
-  --gray-3: #C7C7CC;
-  --gray-4: #D1D1D6;
-  --gray-5: #E5E5EA;
-  --gray-6: #F2F2F7;
+  --gray-1: #1C1C1E;
+  --gray-2: #2C2C2E;
+  --gray-3: #3A3A3C;
+  --gray-4: #48484A;
+  --gray-5: #636366;
+  --gray-6: #8E8E93;
+  --gray-7: #AEAEB2;
+  --gray-8: #C7C7CC;
+  --gray-9: #D1D1D6;
+  --gray-10: #E5E5EA;
+  --gray-11: #F2F2F7;
+
+  --white: #F2F2F7;
+  --black: #1C1C1E;
   
   --pink: #FF375F;
   --red: #FF453A;
@@ -18,4 +26,7 @@
   --indigo: #5E5CE6;
   --purple: #BF5AF2;
   --brown: #AC8E68;
+
+  --base-color: var(--gray-11);
+  --base-color-invert: var(--gray-1);
 }

@@ -4,7 +4,7 @@
   font-weight: var(--font-weight);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
-  color: var(--color);
+  color: var(--manual-color, var(--color));
   text-decoration: var(--text-decoration);
   text-transform: var(--text-transform);
   transition-duration: var(--transition-duration);

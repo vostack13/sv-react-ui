@@ -1,0 +1,13 @@
+.SV-pt-12 { --pt: 12px; }
+.SV-pb-12 { --pb: 12px; }
+.SV-pl-12 { --pr: 12px; }
+.SV-pl-12 { --pl: 12px; }
+.SV-pv-12 { --pt: 12px; --pb: 12px; }
+.SV-ph-12 { --pl: 12px; --pr: 12px; }
+
+.SV-pt-32 { --pt: 32px; }
+.SV-pb-32 { --pb: 32px; }
+.SV-pl-32 { --pr: 32px; }
+.SV-pl-32 { --pl: 32px; }
+.SV-pv-32 { --pt: 32px; --pb: 32px; }
+.SV-ph-32 { --pl: 32px; --pr: 32px; }
