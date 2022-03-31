@@ -1,10 +1,17 @@
 import React, { FC } from "react";
 import cn from '../../utils/classnames';
 import './styles.css'
+import { Props } from "./types";
 
-interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, React.AriaAttributes  {}
-interface Props extends ButtonProps {}
-
-const Button: FC<Props> = ({ children, ...props }) => <button className={cn('SV-Button')} {...props}>{children}</button>
+const Button: FC<Props> = ({ children, variant = 'secondary', ...props }) => (
+  <button
+    className={
+      cn(
+        'SV-Button',
+        `SV-Button-variant-${variant}`
+      )}
+    {...props}
+  >{children}</button>
+)
 
 export { Button };
