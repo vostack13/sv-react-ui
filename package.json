@@ -1,6 +1,6 @@
 {
   "name": "sv-react-ui",
-  "version": "0.1.12",
+  "version": "0.1.14",
   "main": "lib/index",
   "module": "lib/index",
   "private": false,
@@ -36,7 +36,7 @@
     "compile-cjs": "tsc --project ./tsconfig-lib.json",
     "compile-ecm": "tsc src/ui-lib/index.ts --jsx react-jsx --outDir --declaration lib/ecm",
     "compile-ts": "tsc src/ui-lib/index.ts --jsx react-jsx --declaration --outDir lib",
-    "compile-css-cjs": "copyfiles -u 2 src/ui-lib/**/**/*.css lib",
+    "compile-css-cjs": "copyfiles -u 2 src/ui-lib/**/**/**/**/**/**/*.css lib",
     "compile-css-ecm": "copyfiles -u 2 src/ui-lib/**/*.css lib/ecm",
     "compile": "npm run clean && npm run compile-cjs && npm run compile-css-cjs"
   },
