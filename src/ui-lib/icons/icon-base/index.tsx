@@ -1,6 +1,6 @@
 import { FC } from "react"
 import './styles.css'
-import cn from 'classnames'
+import cn from '../../utils/classnames';
 import { IconProps } from "./types"
 
 const IconBase: FC<IconProps> = ({ children, color, size = 24, ...props }) => {

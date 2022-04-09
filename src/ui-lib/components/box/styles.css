@@ -11,6 +11,8 @@
   flex-direction: var(--flex-column);
   flex-wrap: var(--flex-wrap);
   gap: var(--gap);
+  justify-content: flex-start;
+  align-items: flex-start;
   padding-top: var(--pt, 0);
   padding-bottom: var(--pb, 0);
   padding-left: var(--pl, 0);

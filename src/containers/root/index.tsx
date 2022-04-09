@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Checkbox, Text } from "../../ui-lib";
+import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp, Button, Checkbox, Text } from "../../ui-lib";
 import { useTheme } from "../../ui-lib";
 import { Box } from "../../ui-lib/components/box";
 import { GridEdit } from "../../ui-lib/icons/grid-edit";
@@ -14,6 +14,20 @@ export const Root: FC = () => {
       </Box>
 
       <Box style={{maxWidth: 560, margin: '0 auto'}}>
+        <Box pv="12">
+          <Box pb="12">
+            <Text variant='title'>Buttons</Text>
+          </Box>
+
+          <Box row gap="16">
+            <Button variant="primary">Primary</Button>
+            <Button>Default</Button>
+            <Button variant="secondary">Secondary</Button>
+            <Button variant="secondary-fill">Secondary Fill</Button>
+          </Box>
+        </Box>
+
+
         <Box gap="16" pv="12">
           <Text variant='title'>Icons</Text>
           <Text variant='body'>This is default icons pack</Text>
