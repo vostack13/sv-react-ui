@@ -1,12 +1,12 @@
 import { Colors } from "../../types";
 
-type TextVariant = 'title' | 'body' | 'link';
+export type TextVariant = 'title' | 'body' | 'link';
 
 interface SpanProps extends React.HTMLAttributes<HTMLOrSVGElement>, React.AriaAttributes  {}
 
 export interface TextProps extends SpanProps {
   tag?: keyof JSX.IntrinsicElements;
-  variant?: TextVariant;
+  variant?: TextVariant | string;
   hover?: boolean;
   invert?: boolean;
   color?: Colors
