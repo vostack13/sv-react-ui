@@ -1,12 +1,9 @@
 import { CSSProperties, FC } from "react"
 import cn from '../../utils/classnames';
 import { TextProps } from "./types"
-import './styles.css'
-import './variants/title.css'
-import './variants/body.css'
-import './variants/link.css'
 
 const Text: FC<TextProps> = ({
+  tag: Tag = 'span',
   variant = 'body',
   hover = false,
   children,
@@ -20,7 +17,7 @@ const Text: FC<TextProps> = ({
   } as CSSProperties
 
   return (
-    <span
+    <Tag
       style={style}
       className={cn(
         `SV-Text--${variant}`,
@@ -30,7 +27,7 @@ const Text: FC<TextProps> = ({
         className
       )} {...props}>
         {children}
-    </span>
+    </Tag>
   )
 }
 

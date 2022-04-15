@@ -1,7 +1,6 @@
 import { CSSProperties, FC } from "react"
 import cn from '../../utils/classnames';
 import { BoxProps } from "./types"
-import './styles.css';
 
 const Box: FC<BoxProps> = ({
   children,

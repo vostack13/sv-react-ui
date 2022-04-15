@@ -36,7 +36,7 @@
     "compile-cjs": "tsc --project ./tsconfig-lib.json",
     "compile-ecm": "tsc src/ui-lib/index.ts --jsx react-jsx --outDir --declaration lib/ecm",
     "compile-ts": "tsc src/ui-lib/index.ts --jsx react-jsx --declaration --outDir lib",
-    "compile-css-cjs": "copyfiles -u 2 src/ui-lib/**/**/**/**/**/**/*.css lib",
+    "compile-css-cjs": "copyfiles -f -u 2 src/ui-lib/**/**/**/**/**/**/*.css lib/styles",
     "compile-css-ecm": "copyfiles -u 2 src/ui-lib/**/*.css lib/ecm",
     "compile": "npm run clean && npm run compile-cjs && npm run compile-css-cjs"
   },

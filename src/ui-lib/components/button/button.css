@@ -1,0 +1,9 @@
+.SV-Button {
+  background-color: var(--background-color);
+  border: 1px solid;
+  border-color: var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  color: var(--color);
+  cursor: pointer;
+}

@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import { Text } from "../text";
-import './styles.css'
 
 interface InputProps extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, React.AriaAttributes  {}
 

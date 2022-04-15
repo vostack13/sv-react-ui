@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import cn from '../../utils/classnames';
-import './styles.css'
 import { Props } from "./types";
 
 const Button: FC<Props> = ({ children, variant = 'secondary', ...props }) => (

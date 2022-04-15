@@ -1,5 +1,4 @@
 import { FC } from "react"
-import './styles.css'
 import cn from '../../utils/classnames';
 import { IconProps } from "./types"
 

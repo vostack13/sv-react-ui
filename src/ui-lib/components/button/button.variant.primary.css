@@ -1,0 +1,7 @@
+.SV-Button-variant-primary {
+  --color: var(--white);
+  --background-color: var(--blue);
+  --border-color: var(--blue);
+  --border-radius: 6px;
+  --padding:  8px 16px;
+}

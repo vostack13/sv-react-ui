@@ -16,7 +16,7 @@ export const Root: FC = () => {
       <Box style={{maxWidth: 560, margin: '0 auto'}}>
         <Box pv="12">
           <Box pb="12">
-            <Text variant='title'>Buttons</Text>
+            <Text tag='h2' variant='title'>Buttons</Text>
           </Box>
 
           <Box row gap="16">
@@ -29,7 +29,7 @@ export const Root: FC = () => {
 
 
         <Box gap="16" pv="12">
-          <Text variant='title'>Icons</Text>
+          <Text tag='h2' variant='title'>Icons</Text>
           <Text variant='body'>This is default icons pack</Text>
         </Box>
 
@@ -50,7 +50,7 @@ export const Root: FC = () => {
         </Box>
 
         <Box gap="16" pt="32" pb="12">
-          <Text variant='title'>Typography</Text>
+          <Text tag='h2' variant='title'>Typography</Text>
           <Text variant='body'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi veritatis minus, quae labore saepe ipsam illo esse eveniet ut? Ex alias voluptatum aliquid molestias sed dolorem cumque, aut rem.</Text>
         </Box>
 
@@ -61,7 +61,7 @@ export const Root: FC = () => {
         </Box>
 
         <Box gap="16" pt="32" pb="12">
-          <Text variant='title'>Colors</Text>
+          <Text tag='h2' variant='title'>Colors</Text>
         </Box>
 
         <Box grid gridCol='4' gridGap={8} pv="12">
